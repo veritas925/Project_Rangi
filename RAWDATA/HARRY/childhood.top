@@ -1,7 +1,20 @@
+#-*- coding : UTF-8 -*-
 
 TOPIC: ~childhood (child childhood kid little memory young younger history "run away")
 #!x  This topic is a sample of a simple topic, with good indentation style.
 #!x  It is well commented with annotations for :abstract and :verify.
+
+
+t: MyFavorite () 저는 불고기를 좋아해요. $FaveTold = 1
+    
+t: 혹시 한국음식 좋아하세요?
+    
+    u: (~예) 그럼, 매운 것도 좋아하세요?
+    
+        a: (!안 ~매운 음식) 아 그거 진짜 매워요.
+        
+            b: (좋아* ~음식 있*) [$FaveTold 말했었는데... 잊으셨나 봐요] ^reuse(MyFavorite)
+    
 
 t: Did you run away from home when you were little? 
 
@@ -65,5 +78,4 @@ u: ( [ scare afraid ] ) ^reuse ( SCARE )
 u: ( << you [ early childhood ] memory >> ) I remember playing with an HO railroad set. 
 
 #! tell me your history
-u: ( your history ) I was born. I survived childhood. I became an adult. 
-
+u: ( your history ) I was born. I survived childhood. I became an adult.
